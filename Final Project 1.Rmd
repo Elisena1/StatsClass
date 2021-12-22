@@ -1,0 +1,53 @@
+---
+title: "Depression, Anxiety, and Severity of Obesity in Adolescents: Is Emotional Eating the Link?"
+author: "Elisena"
+date: "12/19/2021"
+
+---
+This paper is about "Depression, Anxiety, and Severity of Obesity in Adolescents: Is Emotional Eating the Link?" This is a question that is being asked everyday by health and non-health officials. 
+
+
+**Abstract:**
+
+As stated "The purposes of this study were to characterize the impact of depression and anxiety on the severity of obesity among youth seeking weight management treatment and to determine the extent to which emotional eating mediates the relationship between depression and/or anxiety and degree of obesity. This cross-sectional, retrospective chart review of 102 adolescent patients from a weight management clinic analyzed demographics, body mass index, depression (Patient Health Questionnaire-9), and anxiety (Generalized Anxiety Disorder Scale-7) screens and the Child Eating Behavior Questionnaire, Emotional Over-Eating subscale. After adjusting for demographics and emotional eating, the odds of having severe obesity versus obesity were 3.5 times higher for patients with depression compared with those without (odds ratio [OR] = 3.5; 95% CI = 1.1, 11.3; P = .038) and nearly 5 times higher for those with anxiety (OR = 4.9; CI = 1.2, 20.9; P = .030). Emotional eating, however, was not a mediator between depression/anxiety and degree of adiposity."
+
+
+
+
+```{r tables-mtcars}
+knitr::kable(read_csv("~/Github/final Project/open_data/patience_characteristics.csv"), caption = 'Patience Characteristics')
+library(readr)
+
+cols(
+  Covariate = col_double(),
+  Overall  = col_integer(),
+  PHQ  = col_integer(),
+  `Characteristics.a,,,,,,` = col_double()
+)
+
+
+```
+
+
+
+```{r}
+knitr::kable(read_csv("~/Github/final Project/open_data/obesity_v_obesity.csv"), caption = 'Obesity VS Obesity')
+library(readr)
+cols(
+  .default = col_double()
+)
+
+```
+According to the article "Adjusted analyses were performed with a dichoto- mous obesity classification: that is, severe obesity ver- sus obesity, and with BMI as a continuous variable. After adjusting for sex, race, age, and emotional eating, the odds of having severe obesity versus obesity was 3.5 times higher for patients with depression (odds ratio [OR] = 3.5; 95% CI = 1.1, 11.3; P = .038) and nearly 5 times higher for patients with anxiety (4.9; 1.2, 20.9; P = .030). Emotional eating, however, was not signifi- cantly associated after adjusting for the other covariates (P = .201 and .205, respectively; Table 2). Also, the ORs of depression and anxiety were attenuated when emo- tional eating was not adjusted for. In the adjusted analy- sis of associations with BMI treated as a continuous variable, depression was not significantly associated with BMI (difference of 1.74; −1.25, 4.73; P = .255).
+However, anxiety was significantly associated with greater BMI (3.49; 0.41, 6.57; P = .026; Table 3). Additionally, the associations of depression and anxiety were slightly higher when emotional eating was not adjusted for (1.94 and 3.57, respectively)."
+
+
+
+```{r}
+
+knitr::kable(read_csv("~/Github/final Project/open_data/bmi.csv"), caption = 'BMI')
+library(readr)
+
+```
+Result: 
+The article showed that "There were a total of 102 adolescents (mean age = 15.3±1.9 years) included in this study (Table 1). A total of 34% were boys; 33% were nonwhite; and 17% were classified as having obesity (mean BMI = 30.3 ± 1.9 kg/m2) and 83% as having severe obesity (mean BMI = 41.2 ± 7.2 kg/m2). In the overall sample, 34% endorsed symp- toms consistent with depression, and 32% endorsed symptoms of anxiety. Among patients with and without depression, 91% and 79% had severe obesity, respectively (P = .192) in unadjusted analyses. Among patients with and without anxiety, 94% and 78% had severe obesity, respectively (P = .088), also in unadjusted analyses."
